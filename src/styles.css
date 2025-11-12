@@ -1,0 +1,140 @@
+/* Common */
+:root{
+    --primary-color: #17395a;
+    --secondary-color: #f4f4f4;
+    --accent-color: #0066cc;
+    --font-size-small: 12px;
+    --font-size-regular: 16px;
+    --font-size-large: 24px;
+    --font-size-xlarge: 32px;
+    --font-family: 'Arial, sans-serif';
+    --background-color: #f4f4f4;
+    --color-text: #333;
+}
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--color-text);
+}
+h1, h2, h3 {
+    color: var(--color-text);
+    font-size: var(--font-size-large);
+}
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+header ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    margin: 10px 0;
+}
+header h1 {
+    margin: 0;
+    font-size: var(--font-size-xlarge);
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+footer p {
+    margin: 0;
+    font-size: var(--font-size-small);
+}
+/* Buttons */
+button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: var(--font-size-regular);
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: darken(var(--accent-color), 10%);
+}
+/* Forms */
+input, textarea {
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: var(--font-size-regular);
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+input:focus, textarea:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+label {
+    font-size: var(--font-size-regular);
+    margin-bottom: 5px;
+    display: block;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li{
+    margin-bottom: 10px;
+}
+/* Layout */
+.Container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.alert{
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    font-size: var(--font-size-regular);
+    font-weight: 700;
+}
+.alert-error{
+    /* red */
+    background-color: #ffdddd;
+    color: #a70000;
+}
+.alert-success{
+    /* green */
+    background-color: #ddffdd;
+    color: #007a00;
+}
+.alert-info{
+    /* blue */
+    background-color: #ddeeff;
+    color: #0047a0;
+}
+.alert-warning{
+    /* yellow */
+    background-color: #ffffcc;
+    color: #a68f00;
+}
