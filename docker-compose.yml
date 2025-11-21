@@ -9,7 +9,8 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - ./src:/var/www/html
+      - ./public:/var/www/html
+      - ./src:/var/www/src
       - ./config/php.ini:/usr/local/etc/php/php.ini
     depends_on:
       - mysql

@@ -1,10 +1,8 @@
-<?php require "helpers/header.php" ?>
-<?php require "helpers/csrf.php" ?>
+<?php include '/var/www/src/views/layouts/header.php'; ?>
+
 <main class="Container">
-    <h2>
-        Login
-    </h2>
-    <form action="actions/login.php" method="POST">
+    <h2>Login</h2>
+    <form action="/login" method="POST">
         <?php echo csrfField(); ?>
         <div>
             <label for="login_email">Email:</label>
@@ -17,10 +15,8 @@
         <button type="submit">Login</button>
     </form>
 
-    <h2>
-        Register
-    </h2>
-    <form action="actions/register.php" method="POST">
+    <h2>Register</h2>
+    <form action="/register" method="POST">
         <?php echo csrfField(); ?>
         <div>
             <label for="register_email">Email:</label>
@@ -38,4 +34,4 @@
     </form>
 </main>
 
-<?php require "helpers/footer.php" ?>
+<?php include '/var/www/src/views/layouts/footer.php'; ?>

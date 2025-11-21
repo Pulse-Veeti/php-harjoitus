@@ -94,7 +94,9 @@ $stmt->execute([$email]);
 - `src/db/getTasks.php`: Database queries mixed with HTML rendering
 
 **How to improve**: Separate business logic from presentation logic
-
+---------------------------------------------------------------------
+MVC structure in progress, task model done - finish task controller and push to github
+---------------------------------------------------------------------
 ### 9. **Inconsistent Coding Standards**
 **Issues found**:
 - Mixed camelCase and snake_case variable naming
